@@ -6,7 +6,6 @@
 }
 body {
   font-family: "Kumbh Sans";
-  margin: 1px;
   height: 100dvh;
   width: 100dvw;
   display: flex;
@@ -16,9 +15,8 @@ body {
   background-color: var(--color-primary);
   background-image: url("./images/bg-pattern-top.svg"),
     url("./images/bg-pattern-bottom.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: -50dvw -25dvh, 50dvw 60dvh;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
 }
 
 .card {
@@ -87,25 +85,4 @@ hr {
 }
 .attribution a {
   color: hsl(228, 45%, 45%);
-}
-
-@media screen and (min-width: 426px) {
-  body {
-    background-position: -50dvw -30dvh, 40dvw 50dvh;
-  }
-}
-@media screen and (min-width: 769px) {
-  body {
-    background-position: -50dvw -80dvh, 40dvw 50dvh;
-  }
-}
-@media screen and (min-width: 990px) {
-  body {
-    background-position: -50dvw -80dvh, 40dvw 40dvh;
-  }
-}
-@media screen and (min-width: 1025px) {
-  body {
-    background-position: -50dvw -100dvh, 40dvw 40dvh;
-  }
 }
