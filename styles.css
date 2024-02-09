@@ -1,0 +1,111 @@
+:root {
+  --color-primary: hsl(185, 75%, 39%);
+  --color-text-dark: hsl(229, 23%, 23%);
+  --color-text-light: hsl(227, 10%, 46%);
+  --color-hr: hsl(0, 0%, 59%);
+}
+body {
+  font-family: "Kumbh Sans";
+  margin: 1px;
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--color-primary);
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: -50dvw -25dvh, 50dvw 60dvh;
+}
+
+.card {
+  background-image: url("./images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 85%;
+  max-width: 320px;
+  height: fit-content;
+  padding-bottom: 25px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bg-card {
+  height: 100px;
+  width: 100%;
+  background-image: url("./images/bg-pattern-card.svg");
+}
+img {
+  width: 80px;
+  margin: 80px 0 0;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+p {
+  margin: 15px 0 5px;
+  font-weight: 400;
+  color: var(--color-text-light);
+}
+
+span {
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+hr {
+  width: 100%;
+  border: 1px solid rgba(211, 211, 211, 0.3);
+  margin: 20px 0;
+}
+
+.bold {
+  color: var(--color-text-dark);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.data {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 426px) {
+  body {
+    background-position: -50dvw -30dvh, 40dvw 50dvh;
+  }
+}
+@media screen and (min-width: 769px) {
+  body {
+    background-position: -50dvw -80dvh, 40dvw 50dvh;
+  }
+}
+@media screen and (min-width: 990px) {
+  body {
+    background-position: -50dvw -80dvh, 40dvw 40dvh;
+  }
+}
+@media screen and (min-width: 1025px) {
+  body {
+    background-position: -50dvw -100dvh, 40dvw 40dvh;
+  }
+}
